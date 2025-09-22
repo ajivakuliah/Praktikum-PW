@@ -1,0 +1,253 @@
+/* =======================
+   RESET & BASE STYLE
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9fafc;
+  text-align: center;
+}
+
+a {
+  color: #63ab60;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* =======================
+   REUSABLE CLASSES
+======================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: #63ab60;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #4d8a4a;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* =======================
+   HEADER & NAV
+======================= */
+header {
+  background: linear-gradient(135deg, #63ab60, #4d8a4a);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+/* =======================
+   MAIN CONTENT
+======================= */
+main {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #63ab60;
+  text-align: center;
+}
+
+/* === About Box === */
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Features in grid */
+#features ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+#features li {
+  background: #fff;
+  border-left: 5px solid #63ab60;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* How it works - steps */
+#how-it-works ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+#how-it-works li {
+  padding: 0.8rem 1rem;
+  background: #e7f5e6;
+  border-radius: 8px;
+}
+
+/* =======================
+   ASIDE / INFO
+======================= */
+aside {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+aside h2 {
+  margin-bottom: 1rem;
+}
+
+aside article {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: left;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+footer a {
+  color: #63ab60;
+}
+
+footer a:hover {
+  color: #ffdd57;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Gambar About */
+.about-image {
+  max-width: 300px;
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Kutipan di bawah gambar */
+.about-quote {
+  max-width: 600px;
+  margin: 1rem auto 3rem auto; /* tambah margin-bottom 3rem */
+  padding-bottom: 2rem;        /* jarak internal ke bawah */
+  font-style: italic;
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
+
+  /* pastikan tanpa box */
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
