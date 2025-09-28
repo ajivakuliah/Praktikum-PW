@@ -8,8 +8,9 @@
   <title>Teman Pencocokan MBTI — Landing Page</title>
 </head>
 <body>
+  <button id="darkToggle" class="btn btn-primary" style="margin-top:1rem;">Mode Gelap</button>
   <header>
-    <div>
+    <div class="container">
       <h1>Teman Pencocokan MBTI</h1>
       <p>Temukan teman yang cocok berdasarkan tipe kepribadian MBTI — cepat, mudah, dan menyenangkan.</p>
       <nav aria-label="Navigasi utama">
@@ -23,25 +24,22 @@
     </div>
   </header>
 
-  <main>
-<section id="about" aria-labelledby="about-title">
-  <!-- Gambar di atas Tentang -->
-  <img src="Untitled45_20250701223713.png" alt="Ilustrasi MBTI" class="about-image" />
+  <main class="container">
+    <section id="about" aria-labelledby="about-title">
+      <img src="Untitled45_20250701223713.png" alt="Ilustrasi MBTI" class="about-image" />
 
-  <!-- Teks italic di bawah gambar -->
-  <p class="about-quote"><em>
-    "why do flowers represent human sometimes? it's because flowers are variant. 
-    they have different shape, smell, kind, height, and so on... just like human, 
-    we're different from each other"
-  </em></p>
+      <p class="about-quote"><em>
+        "why do flowers represent human sometimes? it's because flowers are variant. 
+        they have different shape, smell, kind, height, and so on... just like human, 
+        we're different from each other"
+      </em></p>
 
-  <h2 id="about-title">Tentang</h2>
-  <p>
-    Teman Pencocokan MBTI adalah platform sederhana untuk membantu pengguna menemukan teman yang cocok berdasarkan tipe MBTI.
-    Halaman ini merupakan landing page yang menjelaskan tujuan, fitur, dan bagaimana pengguna dapat bergabung.
-  </p>
-</section>
-
+      <h2 id="about-title">Tentang</h2>
+      <p>
+        Teman Pencocokan MBTI adalah platform sederhana untuk membantu pengguna menemukan teman yang cocok berdasarkan tipe MBTI.
+        Halaman ini merupakan landing page yang menjelaskan tujuan, fitur, dan bagaimana pengguna dapat bergabung.
+      </p>
+    </section>
 
     <section id="features" aria-labelledby="features-title">
       <h2 id="features-title">Fitur Utama</h2>
@@ -62,19 +60,15 @@
         <li>Hubungi atau tandai calon teman yang cocok.</li>
       </ol>
     </section>
-
-    <aside aria-labelledby="testimonials-title">
-      <h2 id="testimonials-title">Informasi Tambahan</h2>
-      <article>
-      </article>
-    </aside>
   </main>
 
   <footer>
-    <div>
+    <div class="container">
       <p>Copyright &copy; <span id="year"></span> Teman Pencocokan MBTI</p>
       <p>Referensi desain / inspirasi: <a href="https://www.personality-database.com/" target="_blank" rel="noopener noreferrer">Personality Database</a></p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

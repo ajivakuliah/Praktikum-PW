@@ -13,6 +13,7 @@ body {
   color: #333;
   background: #f9fafc;
   text-align: center;
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 a {
@@ -36,6 +37,7 @@ ul, ol {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .btn {
@@ -94,6 +96,7 @@ nav ul {
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 0.75rem;
 }
 
 nav a {
@@ -170,27 +173,6 @@ h2 {
 }
 
 /* =======================
-   ASIDE / INFO
-======================= */
-aside {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-aside h2 {
-  margin-bottom: 1rem;
-}
-
-aside article {
-  padding: 1rem;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  display: inline-block;
-  text-align: left;
-}
-
-/* =======================
    FOOTER
 ======================= */
 footer {
@@ -237,17 +219,63 @@ footer a:hover {
 /* Kutipan di bawah gambar */
 .about-quote {
   max-width: 600px;
-  margin: 1rem auto 3rem auto; /* tambah margin-bottom 3rem */
-  padding-bottom: 2rem;        /* jarak internal ke bawah */
+  margin: 1rem auto 3rem auto;
+  padding-bottom: 2rem;
   font-style: italic;
   color: #666;
   font-size: 0.85rem;
   line-height: 1.5;
   text-align: center;
-
-  /* pastikan tanpa box */
   background: none;
   border: none;
   box-shadow: none;
 }
 
+/* =======================
+   DARK MODE
+======================= */
+body.dark-mode {
+  background: #0f1720;
+  color: #d6e6dd;
+}
+
+body.dark-mode header {
+  background: linear-gradient(135deg, #2e5b3d, #25462f);
+  color: #e6f2ea;
+}
+
+body.dark-mode a {
+  color: #9bd2a0;
+}
+
+body.dark-mode nav a {
+  color: #e6f2ea;
+}
+
+body.dark-mode #about p,
+body.dark-mode .card,
+body.dark-mode #features li,
+body.dark-mode #how-it-works li {
+  background: #12201a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  color: #d6e6dd;
+}
+
+body.dark-mode footer {
+  background: #071014;
+  color: #9fbca6;
+}
+
+body.dark-mode .about-quote {
+  color: #9fbca6;
+}
+
+/* Button states in dark */
+body.dark-mode .btn-primary {
+  background: #3d7a4f;
+  color: #f3fff4;
+}
+
+body.dark-mode .btn-primary:hover {
+  background: #336042;
+}
