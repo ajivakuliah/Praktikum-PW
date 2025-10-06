@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Teman Pencocokan MBTI — temukan kecocokan teman berdasarkan tipe kepribadian MBTI." />
+  <title>Teman Pencocokan MBTI — Landing Page</title>
+</head>
+<body>
+  <button id="darkToggle" class="btn btn-primary" style="margin-top:1rem;">Mode Gelap</button>
+  <header>
+    <div class="container">
+      <h1>Teman Pencocokan MBTI</h1>
+      <p>Temukan teman yang cocok berdasarkan tipe kepribadian MBTI — cepat, mudah, dan menyenangkan.</p>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#how-it-works">Cara Kerja</a></li>
+          <li><a href="#signup">Daftar</a></li>
+          <li><a href="login.php">login</a></li>
+           <li><a href="dashboard.php">dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" aria-labelledby="about-title">
+      <img src="Untitled45_20250701223713.png" alt="Ilustrasi MBTI" class="about-image" />
+
+      <p class="about-quote"><em>
+        "why do flowers represent human sometimes? it's because flowers are variant. 
+        they have different shape, smell, kind, height, and so on... just like human, 
+        we're different from each other"
+      </em></p>
+
+      <h2 id="about-title">Tentang</h2>
+      <p>
+        Teman Pencocokan MBTI adalah platform sederhana untuk membantu pengguna menemukan teman yang cocok berdasarkan tipe MBTI.
+        Halaman ini merupakan landing page yang menjelaskan tujuan, fitur, dan bagaimana pengguna dapat bergabung.
+      </p>
+    </section>
+
+    <section id="features" aria-labelledby="features-title">
+      <h2 id="features-title">Fitur Utama</h2>
+      <ul>
+        <li>Pencocokan berdasarkan tipe MBTI</li>
+        <li>Filter preferensi (minat, usia, lokasi)</li>
+        <li>Profil singkat untuk setiap calon teman</li>
+        <li>Pengaturan privasi sederhana</li>
+      </ul>
+    </section>
+
+    <section id="how-it-works" aria-labelledby="how-title">
+      <h2 id="how-title">Cara Kerja</h2>
+      <ol>
+        <li>Isi kuisioner MBTI singkat.</li>
+        <li>Isi preferensi teman (minat, rentang usia, jarak).</li>
+        <li>Sistem mencocokkan profil yang relevan.</li>
+        <li>Hubungi atau tandai calon teman yang cocok.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; <span id="year"></span> Teman Pencocokan MBTI</p>
+      <p>Referensi desain / inspirasi: <a href="https://www.personality-database.com/" target="_blank" rel="noopener noreferrer">Personality Database</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
